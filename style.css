@@ -1,0 +1,68 @@
+body {
+    background-color: #ffff00;
+}
+
+header {
+    text-align: center;
+    border: 4px dashed;
+    background: linear-gradient(yellow, rgb(204, 204, 0), black);
+    margin: -8px;
+    .nav {
+        display: flex;
+        justify-content: space-around;
+
+    }
+    .navI {
+        text-decoration: none;
+        border: 2px solid;
+        padding: 5px;
+        border-radius: 10px;
+        background-color: #f0f0f0;
+    }
+    .there {
+        background-color: lightgreen;
+    }
+}
+
+.gra, .hum, .red, .TRI, .noanc, .toBeReleased {
+    border: 3px dotted black;
+    margin: 10px 5px;
+}
+
+.toBeReleased {
+    text-align: center;
+    background-color: #ffa0a0;
+}
+
+.gg-arrow-top-right-r {
+    box-sizing: border-box;
+    position: relative;
+    display: block;
+    width: 22px;
+    height: 22px;
+    border: 2px solid;
+    transform: scale(var(--ggs, 1));
+    border-radius: 4px;
+  }
+  .gg-arrow-top-right-r::after,
+  .gg-arrow-top-right-r::before {
+    content: "";
+    display: block;
+    box-sizing: border-box;
+    position: absolute;
+    right: 4px;
+  }
+  .gg-arrow-top-right-r::after {
+    width: 10px;
+    height: 2px;
+    background: currentColor;
+    transform: rotate(-45deg);
+    bottom: 8px;
+  }
+  .gg-arrow-top-right-r::before {
+    width: 6px;
+    height: 6px;
+    top: 4px;
+    border-top: 2px solid;
+    border-right: 2px solid;
+  }
